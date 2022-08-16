@@ -136,6 +136,12 @@ function App()
 {
     const [{currentOperation, previousOperation, operation}, dispatch] = useReducer(reducer, {})
     return (
+    <div>
+        <div className="information">
+            <h2>Diego Mellado Oliveros</h2>
+            <h3>A01655451</h3>
+            <h3>Basic calculator</h3>
+        </div>
         <div className="calculator-grid">
             <div className="output">
                 <div className="previous-operation">{previousOperation} {operation}</div>
@@ -163,6 +169,7 @@ function App()
             
 
         </div>
+    </div>
     )
 
 }
